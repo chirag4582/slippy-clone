@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
+}
+
+/* left  */
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image{
+    width: 50px;
+}
+
+
+/* middle  */
+
+.middle{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* right  */
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right>button{
+    display: flex;
+    gap: 5px;
+}
