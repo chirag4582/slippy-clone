@@ -1,8 +1,9 @@
 .navbar{
+    background-color: rgb(224,242,254);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px 0px 10px;
+    padding: 5px 30px 0px 30px;
 }
 
 /* left  */
@@ -13,7 +14,7 @@
 }
 
 .logo-image{
-    width: 50px;
+    width: 40px;
 }
 
 
@@ -25,15 +26,60 @@
     gap: 50px;
 }
 
+.underline {
+    position: relative;
+    display: inline-block;
+    color: rgb(31, 31, 115);
+    font-size: 1.2em;
+  }
+  
+  .underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(103, 103, 252);
+    transition: width 0.3s ease-out;
+  }
+  
+  .underline:hover::before {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+
+
 
 /* right  */
 .right{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    font-size: 1.2em;
 }
 
-.right>button{
+.right>p{
+    color: rgb(49, 49, 70);  
+}
+
+.right>p:hover{
+    color: black ;
+}
+
+.right>p:nth-child(2){
     display: flex;
-    gap: 5px;
+    align-items: center;
+    gap: 2px;
+    background-color: white;
+    border: 1px solid rgb(52, 128, 186);
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;  
+}
+
+.right>p:nth-child(2):hover span{
+    transition: 0.3s;
+    transform: translateX(2px);
 }

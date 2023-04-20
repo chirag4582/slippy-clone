@@ -8,17 +8,14 @@ function Navbar() {
         <img src={'./assets/logo/logo-main.svg'} alt='logo' />
       </div>
       <div className='middle'>
-        <p>Home</p>
-        <p>Product</p>
-        <p>Pricing</p>
-        <p>Blog</p>
+        <p className='underline' >Home</p>
+        <p className='underline'>Product</p>
+        <p className='underline'>Pricing</p>
+        <p className='underline'>Blog</p>
       </div>
       <div className='right'>
         <p>Sign in</p>
-        <button>
-          <p>Get started</p>
-          <p>{'>'}</p>
-        </button>
+        <p>Get started <span>{">"}</span> </p>
       </div>
     </div>
   )
