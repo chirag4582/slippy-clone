@@ -3,7 +3,7 @@ import "./Container.css";
 
 function Container1() {
 
-  const [className,setClassName] = useState('')
+  const [className,setClassName] = useState(null)
 
   useEffect(()=>{
     setClassName('loaded')
