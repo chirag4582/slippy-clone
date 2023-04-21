@@ -4,18 +4,36 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 30px 0px 30px;
+    
 }
 
 /* left  */
 .left{
     display: flex;
+    flex: 1;
     align-items: center;
     gap: 10px;
 }
 
 .logo-image{
     width: 40px;
+    transition: 1s;
 }
+
+@keyframes jiggle {
+    0%{width: 40px;}
+    50%{width: 48px;}
+    80%{width:46px;}
+    90%{width:47px;}
+    100%{width: 48px;}
+}
+
+.logo-image:hover{
+    animation-name: jiggle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
 
 
 /* middle  */
@@ -24,6 +42,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    flex: 1.2;
 }
 
 .underline {
@@ -54,6 +73,7 @@
 
 /* right  */
 .right{
+    flex: 0.4;
     display: flex;
     align-items: center;
     gap: 30px;

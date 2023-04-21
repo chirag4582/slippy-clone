@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState , useEffect} from "react";
 import "./Container.css";
+
 function Container1() {
+
+  const [className,setClassName] = useState('')
+
+  useEffect(()=>{
+    setClassName('loaded')
+  },[])
+
   return (
     <div className="container1">
       <div className="text">
         <p>Turn your unboxing into a marketing</p>
         <p>
-          channel with <span>100% open rates</span>
+          channel with <span className={className}>100% open rates</span>
         </p>
         <p>Print personalized inserts while you pick and pack</p>
         <p>
